@@ -35,7 +35,7 @@ const GetPopularCars= async ()=>{
         <div className="lg:col-span-2 lg:py-8">
           <ul className="grid grid-cols-2 gap-4">
             {list.map((car,index)=>(
-              <li className='shadow-md'>
+              <li key={index} className='shadow-md'>
               <Link to={`/listing-details/${car?.id}`}>
                 <img
                   src={car?.images[0]?.imageUrl}

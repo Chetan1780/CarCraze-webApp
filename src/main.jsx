@@ -1,8 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './Home'
-import Contact from './Contact'
+import Home from './Home/Home'
+import Contact from './Home/Contact'
+import About from './Home/About'
 import Profile from './Profile'
 import { ClerkProvider, SignIn } from "@clerk/clerk-react"
 import AddListing from './add-listing'
@@ -11,7 +12,6 @@ import MySignInPage from './MySignInPage'
 import SearchByCategory from './search/[category]'
 import SearchByOptions from './search'
 import ListingDetails from './listing-details/[id]'
-import About from './About'
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
