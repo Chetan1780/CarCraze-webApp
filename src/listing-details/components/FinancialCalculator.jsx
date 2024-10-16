@@ -1,4 +1,4 @@
-import { Input } from '@/components/ui/input'
+import { Input } from '@/Components/ui/input';
 import React, { useState, useEffect } from 'react'
 import { Button } from '@/Components/ui/button';
 
