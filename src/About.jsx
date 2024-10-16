@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 const About = () => {
   return (
     <div>
       <div>
-        <Header/>
+        <Navbar/>
       </div>
         <section className="bg-gray-100 py-12">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">

@@ -1,4 +1,3 @@
-import Header from '@/components/Header'
 import Search from '@/components/Search'
 import { db } from './../../../configs'
 import { CarImages, carListing } from './../../../configs/schema'
@@ -8,7 +7,7 @@ import { eq } from 'drizzle-orm'
 import { useEffect, useState } from 'react'
 import Service from '@/Shared/Service'
 import CarItem from '@/components/CarItem'
-import { index } from 'drizzle-orm/mysql-core'
+import Navbar from '@/components/Navbar'
 const SearchByCategory = () => {
   const { category } = useParams();
   const [carList, setcarList] = useState([])
@@ -25,7 +24,7 @@ const SearchByCategory = () => {
   }
   return (
     <div>
-      <Header />
+      <Navbar />
       <div className='p-16 bg-black flex justify-center'>
         <Search />
       </div>

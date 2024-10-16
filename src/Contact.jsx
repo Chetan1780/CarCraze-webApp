@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <div>
       <div>
-        <Header/>
+        <Navbar/>
       </div>
     <div className="max-w-2xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold mb-6">Contact Us</h1>

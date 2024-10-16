@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { Link, useLocation } from 'react-router-dom';
 
-const Header = () => {
+const Navbar = () => {
   const { user, isSignedIn } = useUser();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -42,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

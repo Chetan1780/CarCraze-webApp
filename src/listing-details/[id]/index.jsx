@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '@/components/Header';
 import DetailHeader from '../components/DetailHeader';
 import { useParams } from 'react-router-dom';
 import { CarImages, carListing } from './../../../configs/schema';
@@ -16,6 +15,7 @@ import Footer from '@/components/Footer';
 import FinancialCalculator from '../components/FinancialCalculator';
 import MostSearchedCar from '@/components/MostSearchedCar';
 import Loading from './Loading';
+import Navbar from '@/components/Navbar';
 const ListingDetails = () => {
     const { id } = useParams();
     const [carDetail, setcarDetail] = useState([]);
@@ -47,7 +47,7 @@ const ListingDetails = () => {
 
     return (
         <div>
-            <Header />
+            <Navbar />
             <div className='p-10 md:px-20'>
                 {loading ? (
                     <Loading/>

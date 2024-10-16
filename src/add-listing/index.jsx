@@ -1,4 +1,3 @@
-import Header from '@/components/Header'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import carDetails from './../Shared/carDetails.json'
@@ -18,6 +17,7 @@ import { useUser } from '@clerk/clerk-react'
 import { eq } from 'drizzle-orm'
 import Service from '@/Shared/Service'
 import IconField from './components/IconField'
+import Navbar from '@/components/Navbar'
 const AddListing = ({onUpdate}) => {
   const [formData, setformData] = useState([])
   const [isSubmitting, setisSubmitting] = useState(false)
@@ -99,7 +99,7 @@ const AddListing = ({onUpdate}) => {
 
 return (
   <div>
-    <Header showButton={false} />
+    <Navbar/>
     <div className="px-10 md:px-20 my-10">
       <h2 className='font-bold text-4xl'>Add New Listing</h2>
       <form onSubmit={(e) => onsubmit(e)} action="" className='p-10 border rounded-xl mt-2'>

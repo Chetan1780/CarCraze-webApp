@@ -1,9 +1,9 @@
-import Header from '@/components/Header';
 import React, { useEffect, useState } from 'react'; // Import useState
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MyListing from "./components/MyListing";
 import Inbox from './components/Inbox';
 import ProfilePage from './components/ProfilePage';
+import Navbar from '@/components/Navbar';
 
 const Profile = () => {
   const [updateKey, setUpdateKey] = useState(0); // State variable to track updates
@@ -14,7 +14,7 @@ const Profile = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar />
       <div className='px-10 md:px-20 my-10'>
         <Tabs defaultValue="my-listing" className="w-full">
           <TabsList className="w-full flex justify-start">

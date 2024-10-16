@@ -4,9 +4,9 @@ import { useSearchParams } from 'react-router-dom'
 import { db } from './../../configs';
 import { eq } from 'drizzle-orm';
 import Service from '@/Shared/Service';
-import Header from '@/components/Header';
 import Search from '@/components/Search';
 import CarItem from '@/components/CarItem';
+import Navbar from '@/components/Navbar';
 const SearchByOptions = () => {
     const [searchParams] = useSearchParams();
     const [carList,setcarList] = useState([])
@@ -25,7 +25,7 @@ const SearchByOptions = () => {
     }
   return (
     <div>
-    <Header />
+    <Navbar />
     <div className='p-16 bg-black flex justify-center'>
       <Search />
     </div>
