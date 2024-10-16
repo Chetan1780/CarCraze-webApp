@@ -4,7 +4,9 @@ import Header from './components/Header';
 const About = () => {
   return (
     <div>
+      <div>
         <Header/>
+      </div>
         <section className="bg-gray-100 py-12">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 sm:text-4xl">
