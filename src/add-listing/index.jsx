@@ -17,7 +17,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useUser } from '@clerk/clerk-react'
 import { eq } from 'drizzle-orm'
 import Service from '@/Shared/Service'
-import IconField from './components/iconField'
+import IconField from './components/IconField'
 const AddListing = ({onUpdate}) => {
   const [formData, setformData] = useState([])
   const [isSubmitting, setisSubmitting] = useState(false)
