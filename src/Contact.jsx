@@ -21,7 +21,6 @@ const Contact = () => {
   return (
     <>
     <Header/>
-    
     <div className="max-w-2xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
       <p className="mb-4">We'd love to hear from you! Fill out the form below to get in touch.</p>

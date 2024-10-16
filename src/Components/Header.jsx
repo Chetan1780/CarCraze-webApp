@@ -5,9 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const { user, isSignedIn } = useUser();
-  const location = useLocation(); // Get the current location
-
-  // Check if the current path is the home page
+  const location = useLocation();
   const isHomePage = location.pathname === '/';
 
   return (
