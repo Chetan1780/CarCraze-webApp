@@ -1,4 +1,4 @@
-import IconField from '@/add-listing/components/iconField'
+import IconField from '@/add-listing/components/IconField'
 import CarSpecification from '@/Shared/CarSpecification'
 import React from 'react'
 
