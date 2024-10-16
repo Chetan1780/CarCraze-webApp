@@ -1,4 +1,4 @@
-import Search from '@/components/Search'
+import Search from '@/Components/Search'
 import { db } from './../../../configs'
 import { CarImages, carListing } from './../../../configs/schema'
 import React from 'react'
@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom'
 import { eq } from 'drizzle-orm'
 import { useEffect, useState } from 'react'
 import Service from '@/Shared/Service'
-import CarItem from '@/components/CarItem'
-import Navbar from '@/components/Navbar'
+import CarItem from '@/Components/CarItem'
+import Navbar from '@/Components/Navbar'
 const SearchByCategory = () => {
   const { category } = useParams();
   const [carList, setcarList] = useState([])

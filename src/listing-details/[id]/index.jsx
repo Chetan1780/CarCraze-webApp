@@ -11,11 +11,11 @@ import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import Specification from '../components/Specification';
 import OwnerDetail from '../components/OwnerDetail';
-import Footer from '@/components/Footer';
+import Footer from '@/Components/Footer';
 import FinancialCalculator from '../components/FinancialCalculator';
-import MostSearchedCar from '@/components/MostSearchedCar';
+import MostSearchedCar from '@/Components/MostSearchedCar';
 import Loading from './Loading';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/Components/Navbar';
 const ListingDetails = () => {
     const { id } = useParams();
     const [carDetail, setcarDetail] = useState([]);

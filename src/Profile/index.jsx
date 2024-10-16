@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'; // Import useState
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import MyListing from "./components/MyListing";
+import MyListing from './components/MyListing';
 import Inbox from './components/Inbox';
 import ProfilePage from './components/ProfilePage';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/Components/Navbar';
 
 const Profile = () => {
   const [updateKey, setUpdateKey] = useState(0); // State variable to track updates

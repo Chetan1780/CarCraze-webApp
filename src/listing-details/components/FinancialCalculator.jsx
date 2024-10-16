@@ -1,6 +1,6 @@
 import { Input } from '@/components/ui/input'
 import React, { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/Components/ui/button';
 
 const FinancialCalculator = ({carDetail}) => {
     const [details, setDetails] = useState({

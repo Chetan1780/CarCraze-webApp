@@ -10,8 +10,8 @@ import {
     CarouselContent,
     CarouselItem,
     CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
+    CarouselPrevious,   
+} from './ui/carousel'
 import { useEffect } from 'react'
 
 const MostSearchedCar = () => {

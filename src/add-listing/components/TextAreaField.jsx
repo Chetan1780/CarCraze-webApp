@@ -1,6 +1,5 @@
 import React from 'react'
-import { Textarea } from "@/components/ui/textarea"
-
+import { Textarea } from '@/Components/ui/textarea'
 const TextAreaField = ({item,handleInputChange,carInfo}) => {
   return (
     <div>

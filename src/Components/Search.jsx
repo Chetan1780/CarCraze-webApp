@@ -6,7 +6,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
+} from "./ui/select"
 import { Separator  } from "./ui/separator"
 import { RiSearch2Line } from "react-icons/ri";
 import Data from '@/Shared/Data';
