@@ -3,7 +3,7 @@ import Header from './components/Header';
 
 const About = () => {
   return (
-    <>
+    <div>
         <Header/>
         <section className="bg-gray-100 py-12">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ const About = () => {
         </div>
       </div>
     </section>
-    </>
+    </div>
   );
 };
 
