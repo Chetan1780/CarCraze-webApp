@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { storage } from './../../../configs/firebaseConfig';
 import { db } from './../../../configs';
-import { Button } from '@/Components/ui/button';
+import { Button } from '@/components/ui/button';
 import { CarImages } from './../../../configs/schema';
 import { eq } from 'drizzle-orm';
 const UploadField = ({triggerUploadImages,setLoader,carInfo,mode}) => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './Components/Header';
+import Header from './components/Header';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

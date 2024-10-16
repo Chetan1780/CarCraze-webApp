@@ -1,7 +1,7 @@
 import React from 'react'
-import { db } from './../../configs';
+import { db } from '../../configs';
 import { useEffect,useState } from 'react';
-import { carListing,CarImages } from './../../configs/schema';
+import { carListing,CarImages } from '../../configs/schema';
 import { eq ,desc} from 'drizzle-orm';
 import Service from '@/Shared/Service';
 import { Link } from 'react-router-dom';

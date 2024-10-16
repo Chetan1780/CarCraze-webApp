@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/Components/ui/button'
+import { Button } from '@/components/ui/button'
 import { MdOutlineLocalOffer } from "react-icons/md";
 const Pricing = ({car}) => {
   return (

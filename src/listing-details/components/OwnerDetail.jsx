@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/Components/ui/button'
+import { Button } from '@/components/ui/button'
 import Service from '@/Shared/Service'
 import { useUser } from '@clerk/clerk-react'
 import { useNavigate } from 'react-router-dom'

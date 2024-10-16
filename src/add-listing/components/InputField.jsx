@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from '@/Components/ui/input'
+import { Input } from '@/components/ui/input'
 const InputField = ({item,handleInputChange,carInfo}) => {
   return (
     <div>

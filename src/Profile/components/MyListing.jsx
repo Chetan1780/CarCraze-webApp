@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from '@/Components/ui/button';
+import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { db } from './../../../configs';
 import { CarImages, carListing } from './../../../configs/schema';
@@ -8,7 +8,7 @@ import { useUser } from '@clerk/clerk-react';
 import Service from '@/Shared/Service';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { FaTrash } from "react-icons/fa";
-import CarItem from '@/Components/CarItem';
+import CarItem from '@/components/CarItem';
 import { storage } from './../../../configs/firebaseConfig'; // Import your Firebase storage
 import { ref, deleteObject } from "firebase/storage"; // Import deleteObject
 

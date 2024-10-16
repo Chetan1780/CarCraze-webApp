@@ -1,5 +1,5 @@
-import Header from '@/Components/Header'
-import Search from '@/Components/Search'
+import Header from '@/components/Header'
+import Search from '@/components/Search'
 import { db } from './../../../configs'
 import { CarImages, carListing } from './../../../configs/schema'
 import React from 'react'
@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom'
 import { eq } from 'drizzle-orm'
 import { useEffect, useState } from 'react'
 import Service from '@/Shared/Service'
-import CarItem from '@/Components/CarItem'
+import CarItem from '@/components/CarItem'
 import { index } from 'drizzle-orm/mysql-core'
 const SearchByCategory = () => {
   const { category } = useParams();

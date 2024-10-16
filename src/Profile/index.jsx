@@ -1,4 +1,4 @@
-import Header from '@/Components/Header';
+import Header from '@/components/Header';
 import React, { useEffect, useState } from 'react'; // Import useState
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import MyListing from "./components/MyListing";

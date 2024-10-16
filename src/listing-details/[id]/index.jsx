@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from '@/Components/Header';
+import Header from '@/components/Header';
 import DetailHeader from '../components/DetailHeader';
 import { useParams } from 'react-router-dom';
 import { CarImages, carListing } from './../../../configs/schema';
@@ -12,9 +12,9 @@ import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import Specification from '../components/Specification';
 import OwnerDetail from '../components/OwnerDetail';
-import Footer from '@/Components/Footer';
+import Footer from '@/components/Footer';
 import FinancialCalculator from '../components/FinancialCalculator';
-import MostSearchedCar from '@/Components/MostSearchedCar';
+import MostSearchedCar from '@/components/MostSearchedCar';
 import Loading from './Loading';
 const ListingDetails = () => {
     const { id } = useParams();

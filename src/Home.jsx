@@ -1,11 +1,11 @@
 import React from 'react'
 import { SignInButton } from '@clerk/clerk-react'
-import Header from "./Components/Header"
-import Hero from './Components/Hero'
-import Category from './Components/Category'
-import MostSearchedCar from './Components/MostSearchedCar'
-import Section from './Components/Section'
-import Footer from './Components/Footer'
+import Header from "./components/Header"
+import Hero from './components/Hero'
+import Category from './components/Category'
+import MostSearchedCar from './components/MostSearchedCar'
+import Section from './components/Section'
+import Footer from './components/Footer'
 const Home = () => {
   return (
     <div>

@@ -4,9 +4,9 @@ import { useSearchParams } from 'react-router-dom'
 import { db } from './../../configs';
 import { eq } from 'drizzle-orm';
 import Service from '@/Shared/Service';
-import Header from '@/Components/Header';
-import Search from '@/Components/Search';
-import CarItem from '@/Components/CarItem';
+import Header from '@/components/Header';
+import Search from '@/components/Search';
+import CarItem from '@/components/CarItem';
 const SearchByOptions = () => {
     const [searchParams] = useSearchParams();
     const [carList,setcarList] = useState([])
