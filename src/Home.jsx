@@ -1,6 +1,6 @@
 import React from 'react'
 import { SignInButton } from '@clerk/clerk-react'
-import Header from "./components/Header"
+import Header from './components/Header'
 import Hero from './components/Hero'
 import Category from './components/Category'
 import MostSearchedCar from './components/MostSearchedCar'
@@ -9,11 +9,10 @@ import Footer from './components/Footer'
 const Home = () => {
   return (
     <div>
-        {/* Header */}
+      <div>
         <Header />
-        {/* Hero  */}
+      </div>
         <Hero/>
-        {/* Category  */}
         <Category/>
         <MostSearchedCar/>
         <Section/>
