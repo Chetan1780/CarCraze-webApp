@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; // Import useState
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
 import MyListing from './components/MyListing';
 import Inbox from './components/Inbox';
 import ProfilePage from './components/ProfilePage';
