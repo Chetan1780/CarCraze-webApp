@@ -12,6 +12,7 @@ import MySignInPage from './MySignInPage'
 import SearchByCategory from './search/[category]'
 import SearchByOptions from './search'
 import ListingDetails from './listing-details/[id]'
+import ErrorPage from './Home/ErrorPage'
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>
+  },
+  {
+    path: '*',
+    element: <ErrorPage/> 
   }
 ])
 createRoot(document.getElementById('root')).render(
