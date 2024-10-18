@@ -21,7 +21,7 @@ const CarItem = ({ car }) => {
 
   return (
     <Link to={`/listing-details/${car?.id}`}>
-      <div className='border rounded-xl bg-white cursor-pointer hover:shadow-md'>
+      <div className='border rounded-xl   w-[300px] md:w-full bg-white cursor-pointer hover:shadow-md'>
         <h2 className='absolute m-3 bg-primary px-2 rounded-full text-white text-sm'>
           New
         </h2>
