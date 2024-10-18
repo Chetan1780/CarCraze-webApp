@@ -27,7 +27,7 @@ const OwnerDetail = ({ car }) => {
         } catch{}
         // Create Channer 
         try {
-            await Service.CreateGroupChannel([userId,ownerUserId],car?.listingTitle).then(resp=>{
+            await Service.CreateGroupChannel(car?.listingTitle,[userId,ownerUserId]).then(resp=>{
                 console.log(resp);
                 navigation('/profile');
             })
