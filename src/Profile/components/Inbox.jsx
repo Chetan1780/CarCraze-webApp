@@ -11,9 +11,9 @@ const Inbox = () => {
     useEffect(() => {
         if (user) {
             const id = user.primaryEmailAddress.emailAddress.split('@')[0];
-            setuserId(userId);
+            setuserId(id); // Correct usage of the computed id
         }
-    }, [user])
+    }, [user]);
     return (
         <div>
             <div style={{ width: '100%', height: '80vh' }}>

@@ -11,8 +11,10 @@ const OwnerDetail = ({ car }) => {
         const userId = user.primaryEmailAddress.emailAddress.split('@')[0];
         const ownerUserId = car?.createdBy.split('@')[0];
         try{
-            console.log(userId)
-            await Service.CreateSendBirdUser(userId,user?.fullName,user?.imageUrl).then(resp=>{
+            console.log("Enter");
+            console.log("userid",userId)
+            console.log("imageUrl",user?.imageUrl)
+            await Service.CreateSendBirdUser(userId,user?.firstName,user?.imageUrl).then(resp=>{
                 console.log(resp);
             })
         } catch{
