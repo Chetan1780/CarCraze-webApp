@@ -16,22 +16,32 @@ const CarItem = ({ car }) => {
     setImageLoaded(true);
   };
 
-  // Check if the aspect ratio is greater than 1 (wide)
-  const isWideImage = imageDimensions.width > imageDimensions.height;
-
   return (
     <Link to={`/listing-details/${car?.id}`}>
-      <div className='border rounded-xl   w-[300px] md:w-full bg-white cursor-pointer hover:shadow-md'>
-        <h2 className='absolute m-3 bg-primary px-2 rounded-full text-white text-sm'>
-          New
-        </h2>
-        <div className='relative h-[200px] w-full overflow-hidden'> {/* Set fixed height and width */}
-        <img
-          className='rounded-t-xl h-full w-full object-cover' // Use object-cover to fill the container
-          src={car?.images[0]?.imageUrl || "https://via.placeholder.com/150"} // Fallback image if none is available
-          alt={car?.listingTitle}
-        />
-      </div>
+      <div className='border rounded-xl w-[300px] md:w-full bg-white cursor-pointer hover:shadow-md relative'>
+        <div className='absolute top-2 left-2 z-30'>
+          {/* Badge for "New" or "Pre-Certified" */}
+          {car?.condition === 'New' && (
+            <h2 className='bg-primary px-3 py-1 rounded-full text-white text-sm'>
+              New
+            </h2>
+          )}
+          {car?.condition === 'Pre-Certified' && (
+            <h2 className='bg-green-500 px-3 py-1 rounded-full text-white text-sm'>
+              Pre-Certified
+            </h2>
+          )}
+        </div>
+
+        <div className='relative h-[200px] w-full overflow-hidden'>
+          <img
+            className='rounded-t-xl h-full w-full object-cover'
+            src={car?.images[0]?.imageUrl || "https://via.placeholder.com/150"}
+            alt={car?.listingTitle}
+            onLoad={handleImageLoad}
+          />
+        </div>
+
         <div className='w-full'>
           <h2 className='font-bold text-black text-lg pl-3 my-2'>
             {car?.listingTitle}
