@@ -11,9 +11,6 @@ const OwnerDetail = ({ car }) => {
         const userId = user.primaryEmailAddress.emailAddress.split('@')[0];
         const ownerUserId = car?.createdBy.split('@')[0];
         try{
-            console.log("Enter");
-            console.log("userid",userId)
-            console.log("imageUrl",user?.imageUrl)
             await Service.CreateSendBirdUser(userId,user?.firstName,user?.imageUrl).then(resp=>{
                 console.log(resp);
             })
@@ -27,8 +24,9 @@ const OwnerDetail = ({ car }) => {
                 console.log(resp);
             })
         } catch{}
-        // Create Channer 
+        // Create Channel 
         try {
+            console.log(car?.listingTitle);
             await Service.CreateGroupChannel(car?.listingTitle,[userId,ownerUserId]).then(resp=>{
                 console.log(resp);
                 navigation('/profile');

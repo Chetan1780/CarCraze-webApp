@@ -39,7 +39,6 @@ const CreateSendBirdUser = async (userId, nickName, profileUrl) => {
 
         // If the user exists, update their nickname and profile URL
         if (userExistsResponse.status === 200) {
-            console.log('User already exists. Updating user info...');
             return await axios.put(
                 `https://api-${sendbirdApplicationId}.sendbird.com/v3/users/${userId}`,
                 {
@@ -86,7 +85,7 @@ const CreateGroupChannel = async (channelName, userIds) => {
         {
             name: channelName,
             user_ids: userIds, 
-            is_distinct: true, 
+            is_distinct: false, 
         },
         {
             headers: {
